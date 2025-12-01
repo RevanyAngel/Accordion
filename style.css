@@ -1,0 +1,391 @@
+html,
+body {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0edf9;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+img {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+/* Headings */
+h1 {
+    font-family: "Lexend Deca", sans-serif;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Header - MOBILE */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    color: black;
+    font-size: 1.2rem;
+}
+
+header div {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+header p {
+    margin: 0.3rem 0 1rem 0;
+}
+
+nav {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 0;
+    background-color: #6D94C5;
+    gap: 1rem;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.atas {
+    padding: 3rem;
+}
+
+.atas h1 {
+    padding: 0 .5rem;
+    font-size: 2rem;
+}
+
+.atas p {
+    color: rgb(122, 122, 122);
+    padding: 0 .5rem;
+    font-size: .8rem;
+}
+
+/* Tengah → default 1 kolom */
+.tengah {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 1rem;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.tengah section {
+    border: 2px solid #6D94C5;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    background-color: rgb(255, 255, 255);
+}
+
+/* Projects */
+.tengah-isi.projects ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tengah-isi.projects li {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0 .5rem 1.5rem;
+}
+
+.tengah-isi.projects li:last-child {
+    border-bottom: none;
+}
+
+/* Experience */
+.experience .satu {
+    border-bottom: 1px solid #ddd;
+}
+
+.tengah-isi.experience h1,
+.tengah-isi.experience h2,
+.tengah-isi.experience p,
+.tengah-isi.experience a {
+    padding-left: 1rem;
+}
+
+.tengah-isi.experience a {
+    display: block;
+    padding-bottom: 2rem;
+}
+
+/* Education */
+.tengah-isi.education p {
+    padding: 0 1rem;
+}
+
+.bawah h1 {
+    background-color: #6D94C5;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+
+/* Ulasan */
+.wrapper-ulasan {
+    display: flex;
+    flex-direction: column;
+}
+
+.ulasan {
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    margin: 2rem 1.5rem .5rem 1.5rem;
+    padding: 1rem 1.5rem;
+    background-color: rgb(245, 244, 244);
+}
+
+.ulasan p {
+    margin: 0;
+    color: rgb(114, 114, 114);
+}
+
+.ulasan h4 {
+    margin: .4rem 0 1rem 0;
+}
+
+/* Cookies */
+.cookies {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.933);
+    border: 1px solid #ddd;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    padding: 2rem;
+    border-radius: 10px;
+    gap: 1rem;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.accept-btn {
+    font-family: "Nunito", sans-serif;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #809dc0;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    width: 300px;
+}
+
+.accept-btn:hover {
+    background-color: #6D94C5;
+}
+
+.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Komentar */
+.komentar {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.komentar h2 {
+    font-weight: normal;
+    font-size: large;
+}
+
+.komentar textarea {
+    resize: none;
+    width: 100%;
+    max-width: 600px;
+    height: 150px;
+    font-size: 1rem;
+    padding: .5rem;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-family: "Nunito", sans-serif;
+}
+
+.komentar p {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    margin: 0;
+    color: rgb(114, 114, 114);
+    font-size: 0.9rem;
+    text-align: right;
+}
+
+.limit-hit {
+    color: red;
+}
+
+.limit-hit:focus {
+    outline: none;
+    border: 2px solid red;
+}
+
+.faq {
+    margin: .5rem;
+    padding: 1rem;
+}
+
+.faq header p {
+    text-align: left;
+    font-size: medium;
+}
+
+.isi-faq button {
+    all:unset;
+    width: 90%;
+    border-radius: 10px;
+    background-color: #6D94C5;
+    color: white;
+    padding: .3rem 1rem;
+    cursor: pointer;
+    margin: .5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.isi-faq button:hover {
+    background-color: #547297;
+}
+
+.isi-faq .active {
+    background-color: #547297;
+}
+
+.isi-faq span {
+    font-size: 1.5rem;
+}
+
+.isi-faq p {
+    padding: .5rem 1rem;
+    margin-top: 0;
+    background-color: white;
+    padding-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    display: none;
+}
+
+.isi-faq p.open {
+    display: block;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    font-size: .8rem;
+}
+
+
+@media (min-width: 640px) {
+
+    h1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #6D94C5;
+        color: white;
+        font-size: 1.5rem;
+        box-shadow: 0 0px 10px rgba(0,0,0,0.9);
+    }
+
+    header div {
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        gap: .5rem;
+    }
+
+    img {
+        margin: 1rem;
+        width: clamp(20px, 5vw, 40px);
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        padding-right: 3rem;
+        background-color: transparent;
+    }
+
+    .atas {
+        padding: 4rem 0;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+    }
+
+    .atas h1 {
+        font-size: 3rem;
+    }
+
+    .atas p {
+        font-size: 1rem;
+    }
+
+    .tengah {
+        grid-template-columns: 1.5fr 2.5fr 2fr;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .wrapper-ulasan {
+        flex-direction: row;
+        margin-top: 2rem;
+    }
+
+    .ulasan {
+        padding: 3rem 1.5rem;
+        margin: 1rem 1.5rem 2rem 1.5rem;
+    }
+
+    .komentar p {
+        right: 450px;
+    }
+
+    footer {
+        font-size: 1.2rem;
+    }
+}
